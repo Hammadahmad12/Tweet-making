@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container mt-4">
+        <h2>Customize this tweet</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Tweet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comments</a>
+            </li>
+        </ul>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label" for="profileImage">Profile Image</label>
+                    <img src="https://placehold.co/50x50" alt="Profile Image" class="d-block mb-2" width="50" height="50">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="tweetImage">Tweet Image</label>
+                    <img src="https://placehold.co/50x50" alt="Tweet Image" class="d-block mb-2" width="50" height="50">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name:</label>
+                    <input type="text" class="form-control border-yellow" id="name" value="Zeoob">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="username">Username:</label>
+                    <input type="text" class="form-control border-yellow" id="username" value="zeooboffical">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="tweetText">Tweet Text:</label>
+                    <textarea class="form-control border-yellow" id="tweetText" rows="3">Build your own Twitter Tweet now! Check it out {{@Zeoob}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="device">Name of device:</label>
+                    <input type="text" class="form-control border-yellow" id="device" value="Twitter for Android">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Fact-check warning</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="factCheck" id="factCheckYes" value="yes">
+                        <label class="form-check-label" for="factCheckYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="factCheck" id="factCheckNo" value="no" checked>
+                        <label class="form-check-label" for="factCheckNo">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Add Official Tick:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="officialTick" id="officialTickYes" value="yes">
+                        <label class="form-check-label" for="officialTickYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="officialTick" id="officialTickNo" value="no" checked>
+                        <label class="form-check-label" for="officialTickNo">No</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Theme:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="theme" id="themeLight" value="light" checked>
+                        <label class="form-check-label" for="themeLight">Light</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="theme" id="themeDim" value="dim">
+                        <label class="form-check-label" for="themeDim">Dim</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="theme" id="themeDark" value="dark">
+                        <label class="form-check-label" for="themeDark">Dark</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="time">Time:</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control border-yellow me-2" id="timeHour" value="12">
+                        <input type="number" class="form-control border-yellow me-2" id="timeMinute" value="15">
+                        <select class="form-select border-yellow" id="timePeriod">
+                            <option value="AM">AM</option>
+                            <option value="PM" selected>PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="date">Date:</label>
+                    <div class="d-flex">
+                        <input type="number" class="form-control border-yellow me-2" id="dateDay" value="30">
+                        <select class="form-select border-yellow me-2" id="dateMonth">
+                            <option value="Jan" selected>Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                        </select>
+                        <input type="number" class="form-control border-yellow" id="dateYear" value="2024">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="retweetsCount">Retweets Count:</label>
+                    <input type="text" class="form-control border-yellow" id="retweetsCount" value="18k">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="likesCount">Likes Count:</label>
+                    <input type="text" class="form-control border-yellow" id="likesCount" value="160">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Liked Status:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="likedStatus" id="likedStatusLiked" value="liked" checked>
+                        <label class="form-check-label" for="likedStatusLiked">Liked</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="likedStatus" id="likedStatusUnliked" value="unliked">
+                        <label class="form-check-label" for="likedStatusUnliked">Unliked</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Retweet Status:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="retweetStatus" id="retweetStatusNo" value="no" checked>
+                        <label class="form-check-label" for="retweetStatusNo">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="retweetStatus" id="retweetStatusYes" value="yes">
+                        <label class="form-check-label" for="retweetStatusYes">Yes</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+  <div class="tweet-container">
+   <div class="tweet-header">
+    <img alt="Profile picture of the user" height="50" src="https://storage.googleapis.com/a1aa/image/mbL6PEMzXe1gS6IUEprMIPgbYDTgsrCsqcHZerZzBAI5Z9AUA.jpg" width="50"/>
+    <div>
+     <strong>
+      Zeoob
+     </strong>
+     <i class="fas fa-pencil-alt">
+     </i>
+     <i class="fas fa-check-circle verified">
+     </i>
+     <br/>
+     <span>
+      @zeoobofficial
+     </span>
+    </div>
+   </div>
+   <div class="tweet-content">
+    <p>
+     <i class="fas fa-pencil-alt">
+     </i>
+     Build your own Twitter Tweet now! Check it out
+     <a href="#">
+      @Zeoob
+     </a>
+    </p>
+   </div>
+   <div class="tweet-footer">
+    <span>
+     <i class="fas fa-pencil-alt">
+     </i>
+     4:17 PM. Jan 01, 2025 .
+     <i class="fas fa-pencil-alt">
+     </i>
+     <a href="#">
+      Twitter for Android
+     </a>
+    </span>
+    <span>
+     <i class="fas fa-pencil-alt">
+     </i>
+     18k Retweets
+     <i class="fas fa-pencil-alt">
+     </i>
+     14k Likes
+    </span>
+   </div>
+   <div class="tweet-actions">
+    <i class="far fa-comment">
+    </i>
+    <i class="fas fa-retweet">
+    </i>
+    <i class="far fa-heart">
+    </i>
+    <i class="fas fa-share">
+    </i>
+   </div>
+  </div>
+  <div class="generate-button">
+   <button>
+    GENERATE FAKE TWEET
+   </button>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+3i5d5L5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5p5yD5e5"></script>

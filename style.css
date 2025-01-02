@@ -1,0 +1,95 @@
+body {
+    background-color: #fff;
+    color: #000;
+}
+.nav-tabs .nav-link.active {
+    background-color: #ffd700;
+    color: #000;
+}
+.form-control, .form-check-input, .form-check-label {
+    border-color: #ffd700;
+}
+.form-check-input:checked {
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+.form-check-label {
+    color: #000;
+}
+.form-control:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+.form-label {
+    color: #000;
+}
+.form-text {
+    color: #000;
+}
+.border-yellow {
+    border-color: #ffd700 !important;
+}
+
+.tweet-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+}
+.tweet-header {
+    display: flex;
+    align-items: center;
+}
+.tweet-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.tweet-header .verified {
+    color: #1da1f2;
+    margin-left: 5px;
+}
+.tweet-content {
+    margin-top: 10px;
+}
+.tweet-content a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #657786;
+}
+.tweet-footer .fa {
+    margin-right: 5px;
+}
+.tweet-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-top: 1px solid #e1e8ed;
+    padding-top: 10px;
+}
+.tweet-actions .fa {
+    color: #657786;
+}
+.generate-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.generate-button button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
